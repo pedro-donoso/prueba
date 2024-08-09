@@ -1,10 +1,10 @@
 package com.example.prueba.view
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
@@ -20,9 +20,9 @@ class DetailFragment : Fragment() {
     private val recipeViewModel: RecipeRoomViewModel by viewModels {
         RecipeRoomViewModelFactory((requireActivity().application as RecipeApp).database.recipeDao())
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -44,14 +44,11 @@ class DetailFragment : Fragment() {
                     binding.recipeCuisine.text = recipeDetail.cuisine
                     binding.recipeIngredients.text = recipeDetail.ingredients
                     binding.recipeDirections.text = recipeDetail.directions
-                    Glide.with(this)
-                        .load(recipeDetail.photoUrl)
-                        .into(binding.recipeImage)
+                    Glide.with(this).load(recipeDetail.photoUrl).into(binding.recipeImage)
                 }
             })
         }
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
