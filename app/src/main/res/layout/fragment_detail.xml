@@ -15,30 +15,36 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp">
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/recipe_image"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                app:shapeAppearanceOverlay="@style/CardView" />
+                android:layout_height="200dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/recipe_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/CardView" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/recipe_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recipe_image"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:paddingTop="130dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/white" />
+
+            </FrameLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/recipe_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:paddingTop="8dp"
-            android:paddingBottom="4dp"
-            android:textColor="@color/primaryL" />
-
-<!--        CAMBIA COLOR TITULO-->
+<!--        CAMBIA COLOR TITULO DESCRIPCION-->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_description"
             android:layout_width="match_parent"
@@ -58,6 +64,12 @@
             android:textColor="@color/primaryL"
             app:chipCornerRadius="8dp" />
 
+        <!--        SEPARADOR LINEA HORIZONTAL -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginBottom="8dp" />
 
 <!--        CAMBIA COLOR TITULO INGREDIENTES-->
         <com.google.android.material.textview.MaterialTextView
@@ -79,6 +91,13 @@
             android:textSize="16sp"
             android:paddingBottom="8dp"
             android:textColor="@color/black" />
+
+        <!--        SEPARADOR LINEA HORIZONTAL -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginBottom="8dp" />
 
         <!--        CAMBIA COLOR TITULO PREPARACION-->
         <com.google.android.material.textview.MaterialTextView
