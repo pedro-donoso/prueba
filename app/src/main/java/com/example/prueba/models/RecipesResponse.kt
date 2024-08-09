@@ -1,9 +1,11 @@
 package com.example.prueba.models
 
+//RESPUESTA SOLICITUD DE RECETAS
 data class RecipesResponse(
     val data: List<Datum>
 )
 
+//INFORMACION DETALLADA SOBRE RECETA
 data class Datum (
     val id: Long,
     val title: String,
@@ -47,3 +49,5 @@ enum class Course {
 enum class Private {
     No
 }
+
+//UTILICE QuickType PARA GENERAR LAS CLASES DE DATOS NECESARIAS PARA TRABAJAR CON LA RESPUESTA JSON DE RECETAS
