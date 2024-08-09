@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
