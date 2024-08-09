@@ -1,10 +1,12 @@
 package com.example.prueba.entity
 
+//IMPORTACIONES
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
+//INTERFAZ DE ACCESO A DATOS PARA ROOM
 @Dao
 interface RecipeDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
