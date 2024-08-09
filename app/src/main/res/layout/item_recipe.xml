@@ -33,14 +33,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:textSize="14sp"
-            android:textColor="@android:color/darker_gray" />
+            android:textColor="@color/primaryL" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_cuisine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:textSize="14sp"
-            android:textColor="@android:color/holo_green_dark" />
+            android:textColor="@color/primaryL" />
 
     </LinearLayout>
 

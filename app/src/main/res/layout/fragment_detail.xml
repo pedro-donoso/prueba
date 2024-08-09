@@ -36,8 +36,9 @@
             android:textStyle="bold"
             android:paddingTop="8dp"
             android:paddingBottom="4dp"
-            android:textColor="@color/design_default_color_primary" />
+            android:textColor="@color/primaryL" />
 
+<!--        TITULO-->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_description"
             android:layout_width="match_parent"
@@ -46,6 +47,7 @@
             android:paddingBottom="8dp"
             android:textColor="@color/black" />
 
+<!--        CAMBIA EL ORIGEN-->
         <com.google.android.material.chip.Chip
             android:id="@+id/recipe_cuisine"
             android:layout_width="wrap_content"
@@ -53,8 +55,9 @@
             android:layout_marginTop="8dp"
             android:textSize="14sp"
             android:text="Cuisine"
-            android:textColor="@color/design_default_color_secondary"
+            android:textColor="@color/primaryL"
             app:chipCornerRadius="8dp" />
+
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_ingredients_label"
@@ -65,7 +68,8 @@
             android:paddingTop="16dp"
             android:paddingBottom="4dp"
             android:textStyle="bold"
-            android:textColor="@color/design_default_color_primary" />
+            android:textColor="@color/primaryL" />
+
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_ingredients"
@@ -84,7 +88,7 @@
             android:paddingTop="16dp"
             android:paddingBottom="4dp"
             android:textStyle="bold"
-            android:textColor="@color/design_default_color_primary" />
+            android:textColor="@color/primaryL" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_directions"
