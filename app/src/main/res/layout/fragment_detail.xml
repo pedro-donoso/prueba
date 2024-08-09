@@ -38,7 +38,7 @@
             android:paddingBottom="4dp"
             android:textColor="@color/primaryL" />
 
-<!--        TITULO-->
+<!--        CAMBIA COLOR TITULO-->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_description"
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
             android:paddingBottom="8dp"
             android:textColor="@color/black" />
 
-<!--        CAMBIA EL ORIGEN-->
+<!--        CAMBIA COLOR ORIGEN-->
         <com.google.android.material.chip.Chip
             android:id="@+id/recipe_cuisine"
             android:layout_width="wrap_content"
@@ -59,6 +59,7 @@
             app:chipCornerRadius="8dp" />
 
 
+<!--        CAMBIA COLOR TITULO INGREDIENTES-->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_ingredients_label"
             android:layout_width="match_parent"
@@ -70,7 +71,7 @@
             android:textStyle="bold"
             android:textColor="@color/primaryL" />
 
-
+        <!--        CAMBIA COLOR INGREDIENTES-->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_ingredients"
             android:layout_width="match_parent"
@@ -79,6 +80,7 @@
             android:paddingBottom="8dp"
             android:textColor="@color/black" />
 
+        <!--        CAMBIA COLOR TITULO PREPARACION-->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_directions_label"
             android:layout_width="match_parent"
@@ -90,6 +92,7 @@
             android:textStyle="bold"
             android:textColor="@color/primaryL" />
 
+        <!--        CAMBIA COLOR PREPARACION-->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/recipe_directions"
             android:layout_width="match_parent"
