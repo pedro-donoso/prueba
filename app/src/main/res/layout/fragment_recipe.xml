@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".view.RecipeFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recipe_recycler"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recipe_recycler_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
 
 </FrameLayout>
