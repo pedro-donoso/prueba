@@ -4,7 +4,7 @@
 <!--    AGREGO PERMISOS DE INTERNET-->
     <uses-permission android:name="android.permission.INTERNET" />
 
-<!--    AGREGO CONFIGURACION DE SEGURIDAD-->
+<!--    AGREGO CLASE PRINCIPAL DE LA APP-->
     <application
         android:name=".models.RecipeApp"
         android:allowBackup="true"
