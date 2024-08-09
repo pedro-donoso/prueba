@@ -2,6 +2,7 @@ package com.example.prueba.entity
 
 //IMPORTACIONES
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
@@ -20,5 +21,9 @@ interface RecipeDao {
 
     @Query("SELECT * FROM recipes WHERE id = :id")
     suspend fun getRecipeById(id: Long): RecipeEntity
+
+
+
+
 
 }
