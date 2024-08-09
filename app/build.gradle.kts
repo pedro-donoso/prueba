@@ -59,6 +59,7 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.media3.common)
     //VARIABLES PARA UTILIZAR DEPENDENCIAS
     val nav_version = "2.7.7"
     val retrofit_version = "2.11.0"
