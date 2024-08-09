@@ -45,6 +45,9 @@ class DetailFragment : Fragment() {
                     binding.recipeIngredients.text = recipeDetail.ingredients
                     binding.recipeDirections.text = recipeDetail.directions
                     Glide.with(this).load(recipeDetail.photoUrl).into(binding.recipeImage)
+
+
+
                 }
             })
         }
@@ -53,4 +56,5 @@ class DetailFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
