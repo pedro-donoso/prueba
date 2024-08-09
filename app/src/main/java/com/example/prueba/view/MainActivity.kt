@@ -2,7 +2,6 @@ package com.example.prueba.view
 
 import android.os.Bundle
 import android.util.Log
-import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -18,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = MainActivityBinding.inflate(layoutInflater)
         setSupportActionBar(binding.toolbar)
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
         if (navHostFragment != null) {
             navController = navHostFragment.navController
             setupActionBarWithNavController(navController)
@@ -35,11 +35,12 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "Navigated to ${destination.label}")
             when (destination.id) {
                 R.id.recipeDetailFragment -> {
-                    supportActionBar?.title = "Detalle de receta"
+                    supportActionBar?.title = "How to prepare?"
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
                 }
+
                 else -> {
-                    supportActionBar?.title = "Recetas"
+                    supportActionBar?.title = "Cooking Recipes App"
                     supportActionBar?.setDisplayHomeAsUpEnabled(false)
                 }
             }
@@ -50,10 +51,7 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        menuInflater.inflate(R.menu.toolbar, menu)
-//        return super.onCreateOptionsMenu(menu)
-//    }
+
 }
 
 
