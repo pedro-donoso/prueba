@@ -48,6 +48,7 @@
                     android:textSize="14sp"
                     android:textColor="@color/primaryL" />
 
+
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/recipe_cuisine"
                     android:layout_width="wrap_content"
@@ -55,8 +56,6 @@
                     android:layout_marginTop="4dp"
                     android:textSize="14sp"
                     android:textColor="@color/primaryL" />
-
-
 
             </LinearLayout>
 
